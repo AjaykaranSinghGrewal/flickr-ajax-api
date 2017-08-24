@@ -1,0 +1,102 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (http://startbootstrap.com/template-overviews/thumbnail-gallery)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-thumbnail-gallery/blob/master/LICENSE)
+ */
+
+body {
+}
+
+@media (min-width: 992px) {
+    body {
+    }
+}
+
+ul.filter-select {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  background: #edeff0;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+ul.filter-select li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: table-cell;
+}
+
+ul.filter-select li:before {
+  display: none;
+}
+
+ul.filter-select button {
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ul.filter-select button:hover:after, ul.filter-select button.selected:after, li:last-child ul.filter-select button:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+ul.filter-select button:hover {
+  background: #dfe3e4;
+}
+
+ul.filter-select button.selected {
+  background: #d1d6d9;
+}
+
+form{
+    margin: 5% auto;
+    text-align: center;
+}
+ul.filter-select button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: 15px;
+  bottom: 15px;
+  width: 1px;
+  background: #d1d6d9;
+}
+
+footer{
+    background: url('source.gif') bottom;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+#photos{
+    margin-left: 3%;
+}

@@ -29,4 +29,7 @@ $(document).ready(function(){
        $.getJSON(apiString, flickerOptions, displayPhotos);
    }); 
     
+    
+    $('#photos').on('click', '.d-block', overlayImage);
+        
 });
